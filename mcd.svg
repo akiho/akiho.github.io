@@ -1,27 +1,30 @@
 <svg width="100%" height="100%"
 	stroke="black"
-	viewBox="40 40 160 160"
+	viewBox="0 0 200 200"
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<g id="long">
-	<line x1="100" y1="45" x2="100" y2="55"/>
-	<line x1="100" y1="145" x2="100" y2="155"/>
+<line id="tick" x1="0" y1="0" x2="0" y2="40"/>
+<use id="stick" xlink:href="#tick" transform="translate(100)" />
+<g id="dtick">
+	<use xlink:href="#tick" transform="translate(99)" />
+	<use xlink:href="#tick" transform="translate(101)" />
 </g>
-<g id="short">
-	<line x1="100" y1="45" x2="100" y2="55"/>
-	<line x1="100" y1="145" x2="100" y2="155"/>
+<g id="spair">
+	<use xlink:href="#stick"/>
+	<use xlink:href="#stick" transform="rotate(180 100 100)"/>
 </g>
-<g id="set">
-	<g transform="rotate(120 100 100)">
-	<use xlink:href="#short"/>
-	</g>
-	<g transform="rotate(60 100 100)">
-	<use xlink:href="#short"/>
-	</g>
-	<use xlink:href="#long"/>
+<g id="dpair">
+	<use xlink:href="#dtick"/>
+	<use xlink:href="#dtick" transform="rotate(180 100 100)"/>
 </g>
 </defs>
-<use xlink:href="#set" stroke-width="2"/>
-<use xlink:href="#set" transform="rotate(90 100 100)"/>
+	<use xlink:href="#dpair"/>
+	<use xlink:href="#dpair" transform="rotate(60 100 100)"/>
+	<use xlink:href="#dpair" transform="rotate(120 100 100)"/>
+<g id="single" transform="rotate(90 100 100)">
+	<use xlink:href="#spair"/>
+	<use xlink:href="#spair" transform="rotate(60 100 100)"/>
+	<use xlink:href="#spair" transform="rotate(120 100 100)"/>
+</g>
 </svg> 
