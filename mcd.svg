@@ -4,27 +4,22 @@
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<line id="tick" x1="0" y1="0" x2="0" y2="40"/>
+<line id="tick" x1="0" y1="0" x2="0" y2="35"/>
 <use id="stick" xlink:href="#tick" transform="translate(100)" />
 <g id="dtick">
 	<use xlink:href="#tick" transform="translate(99)" />
 	<use xlink:href="#tick" transform="translate(101)" />
 </g>
-<g id="spair">
-	<use xlink:href="#stick"/>
-	<use xlink:href="#stick" transform="rotate(180 100 100)"/>
-</g>
-<g id="dpair">
+<g id="duo">
 	<use xlink:href="#dtick"/>
-	<use xlink:href="#dtick" transform="rotate(180 100 100)"/>
+	<use xlink:href="#stick" transform="rotate(30 100 100)"/>
+</g>
+<g id="quad">
+	<use xlink:href="#duo"/>
+	<use xlink:href="#duo" transform="rotate(180 100 100)"/>
 </g>
 </defs>
-	<use xlink:href="#dpair"/>
-	<use xlink:href="#dpair" transform="rotate(60 100 100)"/>
-	<use xlink:href="#dpair" transform="rotate(120 100 100)"/>
-<g id="single" transform="rotate(90 100 100)">
-	<use xlink:href="#spair"/>
-	<use xlink:href="#spair" transform="rotate(60 100 100)"/>
-	<use xlink:href="#spair" transform="rotate(120 100 100)"/>
-</g>
+	<use xlink:href="#quad"/>
+	<use xlink:href="#quad" transform="rotate(60 100 100)"/>
+	<use xlink:href="#quad" transform="rotate(120 100 100)"/>
 </svg> 
