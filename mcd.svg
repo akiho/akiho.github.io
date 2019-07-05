@@ -16,22 +16,29 @@
 </g>
 </defs>
 <g transform="translate(150 150)" stroke="black">
+	<text x="0" y="-100" text-anchor="middle" dy="-5">(0 −100)</text>
 	<use xlink:href="#le"/>
-<g transform="rotate(240)">
-	<use xlink:href="#se"/>
-	<text transform="translate(0 -100) rotate(-240)">(0 240)</text>
-</g>
-	<use xlink:href="#so" transform="rotate(30)"/>
+	<text x="50" y="-87" dx="5">(50 −87)</text>
+	<use xlink:href="#so" transform="rotate(30)" dx="5"/>
+	<text x="87" y="-50" dx="5">(87 −50)</text>
 	<use xlink:href="#se" transform="rotate(60)"/>
+	<text x="+100" y="+0" text-anchor="start" dx="5">(+100 +0)</text>
 	<use xlink:href="#lo" transform="rotate(90)"/>
+	<text x="50" y="87" text-anchor="start" dx="5">(50 87)</text>
 	<use xlink:href="#se" transform="rotate(120)"/>
+	<text x="+87" y="+50" text-anchor="start" dx="5">(+87 +50)</text>
 	<use xlink:href="#so" transform="rotate(150)"/>
+	<text x="0" y="+100" text-anchor="middle" dy="15">(0 +100)</text>
 	<use xlink:href="#le" transform="rotate(180)"/>
+	<text x="-50" y="87" text-anchor="end" dx="-5">(−50 87)</text>
 	<use xlink:href="#so" transform="rotate(210)"/>
-<!-- <use xlink:href="#se" transform="rotate(240)"/> -->
+	<text x="-87" y="50" text-anchor="end" dx="-5">(−87 50)</text>
+	<use xlink:href="#se" transform="rotate(240)"/>
+	<text x="-100" y="0" text-anchor="end" dx="-5">(−100 0)</text>
 	<use xlink:href="#lo" transform="rotate(270)"/>
+	<text x="-87" y="-50" text-anchor="end" dx="-5">(−87 −50)</text>
 	<use xlink:href="#se" transform="rotate(300)"/>
+	<text x="-50" y="-87" text-anchor="end" dx="-5">(−50 −87)</text>
 	<use xlink:href="#so" transform="rotate(330)"/>
-	<text x="100" y="0">(100 100)</text>
 </g>
 </svg> 
