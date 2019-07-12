@@ -5,21 +5,21 @@ layout: feed
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 	<title>j-j.net Blog</title>
-	<link href="http://akiho.github.io/blog/atom.xml" rel="self"/>
-	<link href="http://akiho.github.io/blog"/>
+	<link href="https://ten.j-j.net/blog/atom.xml" rel="self"/>
+	<link href="https://ten.j-j.net/blog"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://akiho.github.io/blog</id>
+	<id>https://ten.j-j.net/blog</id>
 	<author>
-		<name>j-j.net</name>
-		<email>akiho@users.noreply.github.com</email>
+		<name>ten.j-j.net</name>
+		<email>4gx</email>
 	</author>
 
 	{% for post in site.posts %}
 		<entry>
 			<title>{{ post.title }}</title>
-			<link href="http://akiho.github.io{{ post.url }}"/>
+			<link href="https://ten.j-j.net{{ post.url }}"/>
 			<updated>{{ post.date | date_to_xmlschema }}</updated>
-			<id>http://akiho.github.io{{ post.id }}</id>
+			<id>https://ten.j-j.net{{ post.id }}</id>
 			<content type="html">{{ post.content | xml_escape }}</content>
 		</entry>
 	{% endfor %}
